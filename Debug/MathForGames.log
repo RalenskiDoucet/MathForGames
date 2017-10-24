@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\s178029\documents\visual studio 2015\projects\mathforgames\mathforgames\main.cpp(8): error C2228: left of '.mX' must have class/struct/union
+  Vector2.cpp
+  Generating Code...
+c:\users\s178029\documents\visual studio 2015\projects\mathforgames\mathforgames\vector2.cpp(6): warning C4717: 'Vector2::Vector2': recursive on all control paths, function will cause runtime stack overflow
