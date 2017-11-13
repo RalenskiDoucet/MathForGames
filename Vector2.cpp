@@ -41,6 +41,14 @@ float Vector2::Magnitude()
 	float mag = sqrt((mX * mX) + (mY * mY)); 
 	return  mag;
 }
+bool Vector2::operator==(Vector2 & other)
+{
+	if (mX == other.mX && mY == other.mY)
+	{
+		return true;
+	}
+	return false;
+}
 Vector2 Vector2::Normalise()
 {
 	Vector2 V2;
@@ -49,18 +57,6 @@ Vector2 Vector2::Normalise()
 	return V2;
 }
 
-bool Vector2::operator==(Vector2 & other)
-{
-	if (mX == other.mX && mY == other.mY)
-	{
-		return true;
-	}
-	if (mX != other.mX && mY != other.mY)
-	{
-		return false;
-	}
-	return false;
-}
 float Vector2::Input()
 {
 	std::cout << "input X";
