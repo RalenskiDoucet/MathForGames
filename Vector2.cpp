@@ -1,8 +1,8 @@
 #include "Vector2.h"
+#include<math.h>
 
 Vector2::Vector2()
 {
-	Vector2 V3;
 }
 
 Vector2::Vector2(float X, float Y)
@@ -13,25 +13,66 @@ Vector2::Vector2(float X, float Y)
 
 Vector2 Vector2::operator+(Vector2 & other)
 {
-	Vector2 V3;
-	V3.mX = mX + other.mX;
-	V3.mY = mY + other.mY;
+	Vector2 V2;
+	V2.mX = mX + other.mX;
+	V2.mY = mY + other.mY;
 
-	return V3;
+	return V2;
 }
 
 Vector2 Vector2::operator-(Vector2 & other)
 {
-	Vector2 V3;
-	V3.mX = mX - other.mX;
-	V3.mY = mY - other.mY;
-	return V3;
+	Vector2 V2;
+	V2.mX = mX - other.mX;
+	V2.mY = mY - other.mY;
+	return V2;
 }
 
 Vector2 Vector2::operator*(Vector2 & other)
 {
-	Vector2 V3;
-	V3.mX = mX*other.mX;
-	V3.mY = mY*other.mY;
-	return V3;
+	Vector2 V2;
+	V2.mX = mX*other.mX;
+	V2.mY = mY*other.mY;
+	return V2;
 }
+
+float Vector2::Magnitude()
+{
+	float mag = sqrt((mX * mX) + (mY * mY)); 
+	return  mag;
+}
+Vector2 Vector2::Normalise()
+{
+	Vector2 V2;
+	V2.mX = mX / Magnitude();
+	V2.mY = mY / Magnitude();
+	return V2;
+}
+
+bool Vector2::operator==(Vector2 & other)
+{
+	if (mX == other.mX && mY == other.mY)
+	{
+		return true;
+	}
+	if (mX != other.mX && mY != other.mY)
+	{
+		return false;
+	}
+	return false;
+}
+float Vector2::Input()
+{
+	std::cout << "input X";
+	std::cin >>mX;
+	return mX;
+}
+float Vector2::input()
+{
+	std::cout << "input Y";
+	std::cin >>mY;
+	return mY;
+}
+
+
+ 

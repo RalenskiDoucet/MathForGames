@@ -1,4 +1,5 @@
 #pragma once
+#include<iostream>
 class Vector2
 {
 public:
@@ -9,4 +10,10 @@ public:
 	Vector2 operator+(Vector2&other);
 	Vector2 operator-(Vector2&other);
 	Vector2 operator*(Vector2&other);
+	Vector2 Normalise();
+	float Magnitude();
+	bool operator==(Vector2&other);
+	float Input();
+	float input();
 };
+ 
