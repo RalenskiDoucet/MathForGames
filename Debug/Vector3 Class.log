@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Vectors.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Vector3.cpp
+  Vector2.cpp
+  Generating Code...
+  Vector3 Class.vcxproj -> C:\Users\s178029\Documents\GitHub\MathForGames\Debug\Vectors Class.lib

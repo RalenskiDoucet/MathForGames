@@ -2,14 +2,21 @@
 
 Matrix4::Matrix4()
 {
+	mMatrix[4];
 }
 
 Matrix4::Matrix4(float a, float b, float c, float d)
 {
+	mMatrix[0] = a; mMatrix[1] = b;
+	mMatrix[2] = c; mMatrix[3] = d;
 }
 
-Matrix4::Matrix4(float mat[4])
+float Matrix4::Rotation(float)
 {
+	float a;
+	[a = cos(3.14 / 2) - sin(a)];
+	[sin(a) cos(a)];
+	return a;
 }
 
 Matrix4 Matrix4::operator*(Matrix4 & other)

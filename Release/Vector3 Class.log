@@ -1,0 +1,12 @@
+﻿  main.cpp
+main.cpp(117): warning C4553: '==': operator has no effect; did you intend '='?
+main.cpp(118): warning C4553: '==': operator has no effect; did you intend '='?
+main.cpp(119): warning C4553: '==': operator has no effect; did you intend '='?
+  Matrix3.cpp
+  Matrix4.cpp
+  Matrixs.cpp
+  Vector2.cpp
+  Vector3.cpp
+Vector3.cpp(70): warning C4552: '/': operator has no effect; expected operator with side-effect
+  Vector4.cpp
+  Vector3 Class.vcxproj -> C:\Users\s178029\Documents\GitHub\MathForGames\Release\Vectors Class.lib

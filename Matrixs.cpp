@@ -3,14 +3,21 @@
  
 	 Matrix2::Matrix2()
 	 {
+		 mMatrix[4];
 	 }
 
 	 Matrix2::Matrix2(float a, float b, float c, float d)
-	 {
+	 { 
+		 mMatrix[0] = a; mMatrix[1] = b;
+		 mMatrix[2] = c; mMatrix[3] = d;
 	 }
 
-	 Matrix2::Matrix2(float mat[4])
+	 float Matrix2::Rotation(float)
 	 {
+		 float a;
+		 [a = cos(3.14 / 2) - sin(a)];
+		 [sin(a) cos(a)];
+		 return a;
 	 }
 
 	 Matrix2 Matrix2::operator*(Matrix2 & other)

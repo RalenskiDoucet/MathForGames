@@ -114,9 +114,9 @@ int main()
 
 
 	Matrix2 M2; Matrix3 M3; Matrix4 M4;
-	M3.mMatrix[2] = M3.mMatrix[3] * M3.mMatrix[2];
-	M2.mMatrix[2] = M2.mMatrix[2] + M2.mMatrix[1];
-	M4.mMatrix[3] = M4.mMatrix[3] - M4.mMatrix[2];
+	M3.mMatrix[2] == M3.mMatrix[3] * M3.mMatrix[2];
+	M2.mMatrix[2] == M2.mMatrix[2] + M2.mMatrix[1];
+	M4.mMatrix[3] == M4.mMatrix[3] - M4.mMatrix[2];
 
 	
 } 
