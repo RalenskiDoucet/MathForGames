@@ -7,8 +7,6 @@ public:
 	float mMatrix[4];//Creates a matrix variable with 4 indexes.
 	Matrix4();	//Creates a default constructor.
 	Matrix4(float a, float b, float c, float d);//Creates a overloaded constructor with 4 floats as arguements.
-	Matrix4(int a, int b, int c, int d, int e, int f, int g, int h, int i,int j,float k,int l,float m,int n,int o,float p );
-	Matrix4(int a, int b, int c, int d, int e, int f, int g, int h, int i, int j, float k, int l, float m, int n, int o, float p,float q);
 	Matrix4 RotationX(float angle);//This function makes it possible for the Xaxis to be rotated.
 	Matrix4 RotationY(float angle);//This function makes it possible for the Yaxis to be rotated.
 	Matrix4 RotationZ(float angle);//This function makes it possible for the Zaxis to be rotated.

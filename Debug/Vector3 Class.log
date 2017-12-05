@@ -3,11 +3,19 @@
   Vector3.cpp
   Vector2.cpp
   Matrixs2.cpp
-c:\users\s178029\documents\github\mathforgames\matrixs2.cpp(19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrixs2.cpp(17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   Matrix4.cpp
-c:\users\s178029\documents\github\mathforgames\matrix4.cpp(17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrix4.cpp(22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrix4.cpp(28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrix4.cpp(29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrix4.cpp(34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrix4.cpp(35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   Matrix3.cpp
-c:\users\s178029\documents\github\mathforgames\matrix3.cpp(17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrix3.cpp(18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrix3.cpp(24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrix3.cpp(25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrix3.cpp(30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178029\documents\github\mathforgames\matrix3.cpp(31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   main.cpp
   Generating Code...
   Vector3 Class.vcxproj -> C:\Users\s178029\Documents\GitHub\MathForGames\Debug\Vectors Class.lib

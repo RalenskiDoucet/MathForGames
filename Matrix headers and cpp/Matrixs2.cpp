@@ -20,6 +20,18 @@
 		 //*rotate * *this
 
 	 }
+	 Matrix2 Matrix2::RotationY(float angle)//Rotates the Yaxis.
+	 {
+		 float radains = ((angle * 3.1415926535897) / 180);
+		 Matrix2 *rotate = new Matrix2(cos(radains), sin(radains), -sin(radains), cos(radains));
+		 return *rotate * *this;
+	 }
+	 Matrix2 Matrix2::RotationZ(float angle)//Rotates the Zaxis.
+	 {
+		 float radains = ((angle * 3.1415926535897) / 180);
+		 Matrix2 *rotate = new Matrix2(cos(radains), sin(radains), -sin(radains), cos(radains));
+		 return *rotate * *this;
+	 }
 	 Matrix2 Matrix2::operator*(Matrix2 & other)//mutiplies one matrix with anohter matrix.And returns the new matrix.
 	 {
 		 Matrix2 M2 = Matrix2();

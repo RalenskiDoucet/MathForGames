@@ -9,26 +9,22 @@ Matrix3::Matrix3(float a, float b, float c, float d)
 	mMatrix[0] = a; mMatrix[1] = b;
 	mMatrix[2] = c; mMatrix[3] = d;
 }
-Matrix3::Matrix3(int a, int b, int c, int d, float e, float f, int g, float h, float i)
-{
-	mMatrix[4];
-}
-Matrix3 Matrix3::RotationX(float angle)//Rotates the Xaxis.
+Matrix3 Matrix3::RotationX(float angle)
 {
 	float radains = ((angle * 3.1415926535897) / 180);
-	Matrix3 *rotate = new Matrix3(1, 0, 0, 0, cos(radains), sin(-radains), 0, sin(radains), cos(radains));
-	return *rotate * *this;
+	Matrix3 *rotate = new Matrix3(cos(radains), sin(radains), -sin(radains), cos(radains));
+	return *rotate;
 }
-Matrix3 Matrix3::RotationY(float angle)//Rotates the Xaxis.
+Matrix3 Matrix3::RotationY(float angle)
 {
 	float radains = ((angle * 3.1415926535897) / 180);
-	Matrix3 *rotate = new Matrix3(cos(radains), 0, sin(radains), 0, 1, 0, sin(-radains), 0, cos(radains));
+	Matrix3 *rotate = new Matrix3(cos(radains), sin(radains), -sin(radains), cos(radains));
 	return *rotate * *this;
 }
 Matrix3 Matrix3::RotationZ(float angle)
 {
 	float radains = ((angle * 3.1415926535897) / 180);
-	Matrix3 *rotate = new Matrix3(cos(radains), sin(-radains), 0, sin(radains), cos(radains), 0, 0, 0, 1);
+	Matrix3 *rotate = new Matrix3(cos(radains), sin(radains), -sin(radains), cos(radains));
 	return *rotate * *this;
 }
 Matrix3 Matrix3::operator*(Matrix3 & other)
@@ -60,4 +56,3 @@ Matrix3 Matrix3::operator-(Matrix3 & other)
 	M3.mMatrix[3] = other.mMatrix[3] - mMatrix[3];
 	return M3;
 }
-
