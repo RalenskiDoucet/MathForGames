@@ -1,26 +1,32 @@
 #include "Matrix3.h"
 #include <iostream>
-
 Matrix3::Matrix3()
 {
 	mMatrix[4];
 }
-
 Matrix3::Matrix3(float a, float b, float c, float d)
 {
 	mMatrix[0] = a; mMatrix[1] = b;
 	mMatrix[2] = c; mMatrix[3] = d;
 }
-
-Matrix3 Matrix3::Rotation(float angle)
+Matrix3 Matrix3::RotationX(float angle)
 {
 	float radains = ((angle * 3.1415926535897) / 180);
 	Matrix3 *rotate = new Matrix3(cos(radains), sin(radains), -sin(radains), cos(radains));
 	return *rotate;
 }
-
-
-
+Matrix3 Matrix3::RotationY(float angle)
+{
+	float radains = ((angle * 3.1415926535897) / 180);
+	Matrix3 *rotate = new Matrix3(cos(radains), sin(radains), -sin(radains), cos(radains));
+	return *rotate * *this;
+}
+Matrix3 Matrix3::RotationZ(float angle)
+{
+	float radains = ((angle * 3.1415926535897) / 180);
+	Matrix3 *rotate = new Matrix3(cos(radains), sin(radains), -sin(radains), cos(radains));
+	return *rotate * *this;
+}
 Matrix3 Matrix3::operator*(Matrix3 & other)
 {
 
@@ -32,7 +38,6 @@ Matrix3 Matrix3::operator*(Matrix3 & other)
 		return M3;
 
 }
-
 Matrix3 Matrix3::operator+(Matrix3 & other)
 {
 	Matrix3 M3 = Matrix3();

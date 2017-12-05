@@ -16,7 +16,7 @@ Matrix4 Matrix4::Rotation(float angle)
 {
 	float radains = ((angle * 3.1415926535897) / 180);
 	Matrix4 *rotate = new Matrix4(cos(radains), sin(radains), -sin(radains), cos(radains));
-	return *rotate;
+	return *rotate * *this;
 }
 
 Matrix4 Matrix4::operator*(Matrix4 & other)
